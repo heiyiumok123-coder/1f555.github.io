@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(120deg, #3498db, #8e44ad);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .avatar-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .avatar {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 18px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            color: #3498db;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .about-text {
+            line-height: 1.6;
+            color: #555;
+            font-size: 16px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background-color: #f0f7ff;
+            color: #3498db;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .contact-list {
+            list-style: none;
+        }
+        
+        .contact-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-list i {
+            width: 30px;
+            color: #3498db;
+            font-size: 18px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f0f7ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3498db;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 600px) {
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .name {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar-container">
+                <img src="MVIMG_20251102_004629.jpg" alt="个人头像" class="avatar">
+            </div>
+            <h1 class="name">张明</h1>
+            <p class="title">前端开发工程师 | UI设计师</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">关于我</h2>
+                <p class="about-text">
+                    我是一名热爱技术的前端开发工程师，拥有5年Web开发经验。擅长使用HTML、CSS、JavaScript和React等现代前端技术构建用户友好的界面。我对用户体验设计和交互细节有着敏锐的洞察力，致力于创造既美观又实用的数字产品。
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">技能专长</h2>
+                <div class="skills">
+                    <span class="skill-tag">HTML5/CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">响应式设计</span>
+                    <span class="skill-tag">UI/UX设计</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">联系我</h2>
+                <ul class="contact-list">
+                    <li><i>📧</i> zhangming@example.com</li>
+                    <li><i>📱</i> +86 138 0000 0000</li>
+                    <li><i>📍</i> 北京市朝阳区</li>
+                </ul>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">Git</a>
+                    <a href="#" class="social-link">微</a>
+                    <a href="#" class="social-link">知</a>
+                    <a href="#" class="social-link">微</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
